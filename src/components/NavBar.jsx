@@ -10,7 +10,7 @@ const NavBar = () => {
 const [nav, setNav] = useState(false)
   return (
     <div className='max-w-[1400px] mx-auto flex justify-between items-center p-4'>
-      {/* Left Side */}
+{/* Left Side */}
       <div className='flex items-center'>
         <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
         <AiOutlineMenu size={25} />
@@ -21,28 +21,28 @@ const [nav, setNav] = useState(false)
         
       </div>
 
-      {/* Search Input */}
+{/* Search Input */}
       <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[700px]'>
         <AiOutlineSearch size={20} />
         <input className='bg-transparent p-2 w-full focus:outline-none' type="text" placeholder='Search Coupons...' />
       </div>
 
-      {/* Login/Register Buttons */}
+{/* Login/Register Buttons */}
       <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
           <p className='bg-blue-500 text-white rounded-full p-2'>Register</p>
           <p className='p-2'>Login</p>
       </div>
 
-      {/* Cart Button */}
+{/* Cart Button */}
       <button className='bg-blue-500 text-white hidden md:flex items-center p-2 px-5 rounded-full'>
         <BsFillCartFill size={20} className='mr-2' /> Cart
       </button>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
+{/* Mobile Menu */}
+{/* Overlay */}
       {nav ? <div className='bg-black/80 fixed w-full top-0 left-0 h-screen z-10'></div> : ''}
 
-      {/* Side Menu */}
+{/* Side Menu */}
       <div className={nav ? 'fixed h-screen bg-white top-0 left-0 w-[300px] z-10 duration-300' : 'fixed h-screen bg-white top-0 left-[-100%] w-[300px] z-10 duration-300'}>
       <AiOutlineClose onClick={()=> setNav(!nav)}
       size={30} className='absolute right-4 top-4 cursor-pointer' />
