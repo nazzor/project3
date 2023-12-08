@@ -134,33 +134,33 @@ export const data = [
   export const categories = [
     {
       id: 1,
-      name: 'Home',
+      name: 'Home Products',
       image:
-        'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'src/assets/house.png',
     },
     {
       id: 2,
-      name: 'Shirt',
+      name: 'Shirts',
       image:
-        'https://images.unsplash.com/photo-1598032895397-b9472444bf93?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'src/assets/shirt.png',
     },
     {
       id: 3,
       name: 'Sneakers',
       image:
-        'https://images.unsplash.com/photo-1514989940723-e8e51635b782?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'src/assets/sneakers.png',
     },
     {
       id: 4,
       name: 'Jeans',
       image:
-        'https://images.unsplash.com/photo-1637069585336-827b298fe84a?q=80&w=2873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'src/assets/jeans.png',
     },
     {
       id: 5,
       name: 'Accessories',
       image:
-        'https://images.unsplash.com/photo-1537832816519-689ad163238b?q=80&w=2918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'src/assets/sunglasses.png',
     },
   ];
   

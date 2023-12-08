@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Slider from './components/Slider'
 import HeadlineCards from './components/HeadlineCards'
 import Coupons from './components/Coupons'
+import Category from './components/Category'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Slider />
       <HeadlineCards />
       <Coupons />
+      <Category />
     </div>
   )
 }

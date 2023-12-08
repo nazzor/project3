@@ -71,8 +71,7 @@ const filterPrice = (price) =>{
                         </div>
                 </div>
             ))}
-        </div>
-
+        </div>        
     </div>
   );
 }

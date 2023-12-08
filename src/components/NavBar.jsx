@@ -18,7 +18,7 @@ const [nav, setNav] = useState(false)
         <h1 className='text-2xl lg:text-3xl px-2'>
           The Best <span className='font-bold text-blue-500'>Coupons</span>
         </h1>
-        
+
       </div>
 
 {/* Search Input */}

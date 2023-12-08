@@ -51,6 +51,7 @@ const HeadlineCards = () => {
             />
         </div>
     </div>
+    <hr />
     </div>
   )
 }
