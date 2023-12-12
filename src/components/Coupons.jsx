@@ -16,7 +16,7 @@ const filterType = (category) => {
 }
 
 //  Filter by Price
-const filterPrice = (price) =>{
+const filterPrice = (price) => {
     setCoupons(
         data.filter((item) => {
             return item.price === price;
@@ -71,6 +71,11 @@ const filterPrice = (price) =>{
                         </div>
                 </div>
             ))}
+        </div>
+        <div className='justify-center flex pt-16'>
+            <button className='m-1 py-2 px-7 border rounded-md border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white'>
+                Shop All
+            </button>
         </div>        
     </div>
   );

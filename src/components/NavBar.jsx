@@ -3,7 +3,7 @@ import {AiOutlineClose, AiOutlineMenu, AiOutlineSearch, AiFillTag} from 'react-i
 import {BsFillCartFill, BsFillSaveFill} from 'react-icons/bs'
 import {TbTruckDelivery} from 'react-icons/tb'
 import {MdFavorite, MdHelp} from 'react-icons/md'
-import {FaWallet, FaUserFriends} from 'react-icons/fa'
+import {FaWallet, FaUserFriends, FaUser} from 'react-icons/fa'
 import { useState } from 'react'
 
 const NavBar = () => {
@@ -15,28 +15,28 @@ const [nav, setNav] = useState(false)
         <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
         <AiOutlineMenu size={25} />
         </div>
-        <h1 className='text-2xl lg:text-3xl px-2'>
-          The Best <span className='font-bold text-blue-500'>Coupons</span>
-        </h1>
-
+        <a href="#">
+          <h1 className='text-2xl lg:text-3xl px-2'>
+            The Best <span className='font-bold text-blue-500'>Coupons</span>
+          </h1>
+        </a>
       </div>
 
 {/* Search Input */}
-      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[700px]'>
-        <AiOutlineSearch size={20} />
+      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[300px] lg:w-[500px] xl:w-[700px]'>
+        <AiOutlineSearch size={20}/>
         <input className='bg-transparent p-2 w-full focus:outline-none' type="text" placeholder='Search Coupons...' />
       </div>
 
-{/* Login/Register Buttons */}
-      <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
-          <p className='bg-blue-500 text-white rounded-full p-2'>Register</p>
-          <p className='p-2'>Login</p>
-      </div>
-
-{/* Cart Button */}
-      <button className='bg-blue-500 text-white hidden md:flex items-center p-2 px-5 rounded-full'>
+{/* Login and Cart Buttons */}
+    <div className='align-end flex'>
+      <a href='/login' className='bg-blue-500 text-white hidden md:flex items-center p-2 px-5 rounded-full mr-4'>
+        <FaUser size={20} className='mr-2'/>Log In
+      </a>
+      <a href='/cart' className='bg-blue-500 text-white hidden md:flex items-center p-2 px-5 rounded-full'>
         <BsFillCartFill size={20} className='mr-2' /> Cart
-      </button>
+      </a>
+    </div>
 
 {/* Mobile Menu */}
 {/* Overlay */}

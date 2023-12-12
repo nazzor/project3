@@ -4,17 +4,23 @@ import Slider from './components/Slider'
 import HeadlineCards from './components/HeadlineCards'
 import Coupons from './components/Coupons'
 import Category from './components/Category'
+import Login from './pages/Login'
+import {Routes, Route} from 'react-router-dom'
+
 
 function App() {
 
   return (
-    <div>
+    <>
       <NavBar />
+      <Routes>
+        <Route path='/login' element={<Login />} />
+      </Routes>
       <Slider />
       <HeadlineCards />
       <Coupons />
       <Category />
-    </div>
+    </>
   )
 }
 
