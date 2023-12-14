@@ -1,25 +1,18 @@
 import React from 'react'
-import NavBar from './components/NavBar'
-import Slider from './components/Slider'
-import HeadlineCards from './components/HeadlineCards'
-import Coupons from './components/Coupons'
-import Category from './components/Category'
-import Login from './pages/Login'
 import {Routes, Route} from 'react-router-dom'
-
+import Login from './pages/Login'
+import Home from './pages/Home'
+import Shop from './pages/Shop'
 
 function App() {
 
   return (
     <>
-      <NavBar />
       <Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/shop' element={<Shop />} />
       </Routes>
-      <Slider />
-      <HeadlineCards />
-      <Coupons />
-      <Category />
     </>
   )
 }

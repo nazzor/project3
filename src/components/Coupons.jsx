@@ -73,9 +73,9 @@ const filterPrice = (price) => {
             ))}
         </div>
         <div className='justify-center flex pt-16'>
-            <button className='m-1 py-2 px-7 border rounded-md border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white'>
-                Shop All
-            </button>
+            <a href="/shop">
+            <button  className='m-1 py-2 px-7 border rounded-md border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white'>Shop All</button>
+            </a>
         </div>        
     </div>
   );
