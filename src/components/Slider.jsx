@@ -1,8 +1,11 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
- 
+
 export function Slider() {
   return (
-    <Carousel className="relative h-[400px] overflow-hidden rounded-2xl md:h-[360px] md:rounded-4xl mx-auto" style={{width: '95%'}} >
+    <Carousel
+      className="relative h-[400px] overflow-hidden rounded-2xl md:h-[360px] md:rounded-4xl mx-auto"
+      style={{ width: "95%" }}
+    >
       <div className="relative h-full w-full">
         <img
           src="https://images.unsplash.com/photo-1519931127525-6b6a7619a003?q=80&w=2823&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -23,7 +26,8 @@ export function Slider() {
               color="white"
               className="mb-12 opacity-80"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nisi?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus, nisi?
             </Typography>
             <div className="flex justify-center gap-2">
               <Button size="lg" color="white">
@@ -56,7 +60,8 @@ export function Slider() {
               color="white"
               className="mb-12 opacity-80"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, illum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              illum!
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
@@ -89,7 +94,8 @@ export function Slider() {
               color="white"
               className="mb-12 opacity-80"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, eveniet.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+              eveniet.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
@@ -106,4 +112,4 @@ export function Slider() {
   );
 }
 
-export default Slider
+export default Slider;
